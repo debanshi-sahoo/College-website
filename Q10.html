@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration page</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+         .styling-para{
+          text-align:center;
+          font-size:200%;
+         }
+       body{
+        background-color:rgb(165, 248, 234);}
+          .dropbtn {
+ background-color: white;
+ color: gray;
+ padding: 12px;
+ font-size: 20px;
+ border: none;
+}
+.dropdown {
+ position: relative;
+ display: inline-block;
+}
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: gray;
+ min-width: 100%;
+ box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.9);
+}
+.dropdown-content a {
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+}
+.dropdown-content a:hover {
+ background-color: brown
+}
+.dropdown:hover .dropdown-content {
+ display: block;
+}
+.dropdown:hover .dropbtn {
+ background-color: orange;
+}
+         </style>
+    </head>
+    <body>
+        <div class="signup-box">
+            <h1 style="text-align:center">Registration</h1>
+                <form>
+                    <h3>
+                        <p class="styling-para">
+                        <label>User Name</label><br>
+                        <input type="text" placeholder="enter name"><br></p>
+                         <p class="styling-para">
+                            <label>Email</label><br>
+                            <input type="text" placeholder="enter email"><br></p>
+                             <p class="styling-para">
+                                <label>Mobile</label><br>
+                                <input type="number" placeholder=" enter number"><br></p>
+                                 <p class="styling-para">
+                                    <label>Gender</label><br>
+                                    <input type="radio" name="gender">Male
+                                <input type="radio" name="gender">Female<br></p>
+                                 <p class="styling-para">
+                                    <div class=“dropdown”>
+	 	 <button class=“dropbtn”>City</button>
+	 	 <div class=“dropdown-content”>
+	 	 	 <a href=“#”>Bhubaneswar</a><a href=“#”>Cuttack</a><a href=“#”>Puri</a>
+                 </div>
+                                  </div>
+                                    <label>City</label><br>
+                                    <input type="text" placeholder="enter city"><br></p>
+                                     <p class="styling-para">
+                                        <label>Password</label><br>
+                                        <input type="password" placeholder="enter password"></p>
+                                          <p class="styling-para">
+                                        <input type="button" value="Submit"> <a href="index.html"></a></p>
+                    </h3>
+                </form>
+        </div>
+    </body>
+</html>
